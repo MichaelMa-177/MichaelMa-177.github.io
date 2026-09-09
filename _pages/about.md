@@ -165,7 +165,7 @@ latest_posts:
 
   .competition-entry {
     display: grid;
-    grid-template-columns: 255px minmax(0, 1fr);
+    grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
     gap: 1.75rem;
     align-items: center;
     padding: 1rem 0;
@@ -174,11 +174,15 @@ latest_posts:
   .competition-certificate {
     width: 100%;
     height: auto;
-    aspect-ratio: 8 / 5;
+    aspect-ratio: 297 / 210;
     object-fit: contain;
     background: #f7f9fb;
     border: 1px solid var(--home-rule);
     border-radius: 10px;
+  }
+
+  .competition-certificate-link {
+    display: block;
   }
 
   .competition-copy h3 {
@@ -216,6 +220,14 @@ latest_posts:
     height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .project-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #000;
     border-radius: 10px;
   }
 
@@ -285,6 +297,10 @@ latest_posts:
     }
 
     .project-image {
+      max-width: 420px;
+    }
+
+    .project-video {
       max-width: 420px;
     }
 
@@ -371,12 +387,14 @@ latest_posts:
   <section class="home-section" aria-labelledby="competition-heading">
     <h2 id="competition-heading">Competition</h2>
     <article class="competition-entry">
-      <img class="competition-certificate" src="{{ '/assets/img/icra-2026-cloud-robotics-certificate-placeholder.svg' | relative_url }}" alt="Placeholder for the ICRA 2026 Cloud Robotics Competition runner-up certificate" loading="lazy" width="640" height="400">
+      <a class="competition-certificate-link" href="{{ '/assets/pdf/icra-2026-rgmc-cloud-robotics-runner-up-certificate.pdf' | relative_url }}" target="_blank" rel="noopener">
+        <img class="competition-certificate" src="{{ '/assets/img/icra-2026-rgmc-cloud-robotics-certificate.jpg' | relative_url }}" alt="ICRA 2026 Robotic Grasping and Manipulation Competition Cloud Robotics Track second-place certificate" loading="lazy" width="1400" height="990">
+      </a>
       <div class="competition-copy">
         <h3>2nd Place — IEEE ICRA 2026 Cloud Robotics Competition</h3>
         <p class="competition-kicker">11th Robotic Grasping and Manipulation Competition · Team MIL-Cloud</p>
         <p>Developed robust manipulation solutions for planar pushing and linear deformable-object shape control using the remote CloudGripper platform.</p>
-        <p class="project-links"><a href="https://cloudgripper.org/icra2026/index.html">Official Award Page</a></p>
+        <p class="project-links"><a href="https://cloudgripper.org/icra2026/index.html">Official Award Page</a><a href="{{ '/assets/pdf/icra-2026-rgmc-cloud-robotics-runner-up-certificate.pdf' | relative_url }}">Certificate (PDF)</a></p>
       </div>
     </article>
   </section>
@@ -385,22 +403,29 @@ latest_posts:
     <h2 id="projects-heading">Research Projects</h2>
 
     <article class="research-project">
-      <img class="project-image" src="{{ '/assets/img/click-to-model.jpg' | relative_url }}" alt="Metric mesh registration result from Click-to-Model" loading="lazy" width="640" height="360">
+      <video class="project-video" poster="{{ '/assets/img/click-to-model-demo-poster.jpg' | relative_url }}" autoplay loop muted playsinline controls preload="metadata" aria-label="Click-to-Model demonstration video">
+        <source src="{{ '/assets/video/click-to-model-demo.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
       <div class="project-copy">
-        <h3>Click-to-Model: Interactive RGB-D Reconstruction and Tracking</h3>
-        <p class="project-kicker">SAM2 · SAM 3D Objects · Metric Scale Recovery · SPARK-6D</p>
+        <h3>Click-to-Model: Real-Time Interactive Object Modeling and Robust 6D Pose Tracking</h3>
+        <p class="project-kicker">Accepted to IEEE/RSJ IROS 2026 · SAM2 · SAM 3D Objects · Metric Scale Recovery · SPARK-6D</p>
         <p>An end-to-end system that starts with a click in an RGB-D frame, reconstructs a metric object mesh, and hands it to a real-time 6D pose tracker.</p>
-        <p class="project-links"><a href="https://github.com/MichaelMa-177/Click-to-Model">Code</a><a href="https://github.com/MichaelMa-177/Click-to-Model#readme">Documentation</a></p>
+        <!-- Replace this temporary Paper URL with the official IROS 2026 publication link when available. -->
+        <p class="project-links"><a href="https://github.com/MichaelMa-177/Click-to-Model">Code</a><a href="https://github.com/MichaelMa-177/Click-to-Model#paper">Paper (coming soon)</a><a href="https://github.com/MichaelMa-177/Click-to-Model#readme">Documentation</a></p>
       </div>
     </article>
 
     <article class="research-project">
-      <img class="project-image" src="{{ '/assets/img/spark-6d.jpg' | relative_url }}" alt="SPARK-6D tracking a handheld drill" loading="lazy" width="640" height="360">
+      <video class="project-video" poster="{{ '/assets/img/spark-6d-demo-poster.jpg' | relative_url }}" autoplay loop muted playsinline controls preload="metadata" aria-label="SPARK-6D demonstration video">
+        <source src="{{ '/assets/video/spark-6d-demo.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
       <div class="project-copy">
         <h3>SPARK-6D: Real-Time 6D Object Tracking</h3>
         <p class="project-kicker">SE(3) Kalman Prediction · Optical-Flow Gating · GPU Pipeline Optimization</p>
         <p>An engineering extension of FoundationPose that selectively predicts or refines object poses, with conservative fallbacks and reproducible performance comparisons.</p>
-        <p class="project-links"><a href="https://github.com/MichaelMa-177/SPARK-6D">Code</a><a href="https://github.com/MichaelMa-177/SPARK-6D/blob/main/media/spark6d_official_engineering_comparison.mp4">Video</a></p>
+        <p class="project-links"><a href="https://github.com/MichaelMa-177/SPARK-6D">Code</a><a href="{{ '/assets/video/spark-6d-demo.mp4' | relative_url }}">Video</a></p>
       </div>
     </article>
   </section>
