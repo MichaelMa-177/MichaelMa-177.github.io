@@ -65,23 +65,28 @@ latest_posts:
     line-height: 1.2;
   }
 
-  .home-focus {
-    margin: 0 0 0.15rem;
-    color: var(--home-muted);
-    font-size: 1.02rem;
+  .home-email {
+    margin: 0 0 0.1rem;
   }
 
   .home-links {
-    margin: 0.15rem 0 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin: 0 0 0.85rem;
   }
 
-  .home-links a + a::before,
   .resource-links > * + *::before {
     content: " · ";
     color: var(--home-muted);
   }
 
-  .home-identity p:not(.home-focus):not(.home-links) {
+  .profile-link-placeholder {
+    color: var(--global-theme-color);
+    cursor: default;
+  }
+
+  .home-identity p:not(.home-links):not(.home-email) {
     margin: 0 0 0.65rem;
   }
 
@@ -357,16 +362,18 @@ latest_posts:
     <img class="home-portrait" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Portrait of Mingwei Ma" width="220" height="220">
     <div class="home-identity">
       <h1 id="home-name">Mingwei Ma</h1>
-      <p class="home-focus">Embodied AI · 3D Vision · Robot Perception</p>
+      <p class="home-email">Email: mmm593860159@gmail.com</p>
       <p class="home-links">
-        <a href="mailto:mmm593860159@gmail.com">Email</a>
-        <a href="https://github.com/MichaelMa-177">GitHub</a>
+        <span class="profile-link-placeholder" role="link" aria-disabled="true">[Google Scholar]</span>
+        <a href="https://github.com/MichaelMa-177">[GitHub]</a>
+        <span class="profile-link-placeholder" role="link" aria-disabled="true">[CV]</span>
+        <span class="profile-link-placeholder" role="link" aria-disabled="true">[Twitter]</span>
       </p>
       <p>
-        I build robot perception systems that connect foundation models with reliable, real-time physical interaction. My current work focuses on 6D object pose tracking, interactive RGB-D reconstruction, and deployment-aware embodied intelligence.
+        I am a second-year Master student at <a href="https://www2.scut.edu.cn/automation/">SCUT School of Automation Science and Engineering</a>, advised by <a href="https://www2.scut.edu.cn/automation/13575/list.htm">Prof. Yang Cong</a>. I am broadly interested in robot manipulation, especially robot perception, imitation learning and their application in robotics. My goal is to develop algorithms for real-world challenges, such as robust and generalizable robot manipulation.
       </p>
       <p>
-        I am especially interested in turning strong perception models into reproducible systems that remain fast and robust outside controlled demonstrations. Recent projects include <a href="https://github.com/MichaelMa-177/Click-to-Model">Click-to-Model</a> and <a href="https://github.com/MichaelMa-177/SPARK-6D">SPARK-6D</a>.
+        Previously, I obtained Bachelor of Automation in <a href="http://www5.zzu.edu.cn/eie/">School of Electrical and Information Engineering</a> at <a href="https://www.zzu.edu.cn/">Zhengzhou University</a>.
       </p>
     </div>
   </section>
