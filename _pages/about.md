@@ -127,6 +127,7 @@ latest_posts:
 
   .project-image {
     width: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 10px;
