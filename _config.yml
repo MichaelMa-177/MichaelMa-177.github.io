@@ -228,7 +228,8 @@ exclude:
   - assets/json/
   - assets/plotly/
   - assets/rendercv/
-  - assets/video/
+  - assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
+  - assets/video/tutorial_al_folio.mp4
   - package.json
   - package-lock.json
   - purgecss.config.js
