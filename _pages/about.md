@@ -366,7 +366,7 @@ latest_posts:
       <p class="home-links">
         <span class="profile-link-placeholder" role="link" aria-disabled="true">[Google Scholar]</span>
         <a href="https://github.com/MichaelMa-177">[GitHub]</a>
-        <span class="profile-link-placeholder" role="link" aria-disabled="true">[CV]</span>
+        <a href="{{ '/assets/pdf/MingweiMa_CV.pdf' | relative_url }}" download="MingweiMa_CV.pdf" aria-label="Download Mingwei Ma CV (PDF)">[CV]</a>
         <span class="profile-link-placeholder" role="link" aria-disabled="true">[Twitter]</span>
       </p>
       <p>
