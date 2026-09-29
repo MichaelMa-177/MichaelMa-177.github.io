@@ -420,8 +420,8 @@ latest_posts:
     </article>
   </section>
 
-  <section class="home-section" aria-labelledby="workshops-heading">
-    <h2 id="workshops-heading">Workshops</h2>
+  <section class="home-section" aria-labelledby="workshop-heading">
+    <h2 id="workshop-heading">Workshop</h2>
     <article>
       <h3 class="paper-title">From Planar Pushing to Rope Shaping: Generalizable Robotic Manipulation on CloudGripper</h3>
       <p class="paper-venue">Workshop Talk · RGMCW 2026 at IEEE/RSJ IROS 2026 · Pittsburgh, PA · October 1, 2026</p>
