@@ -420,12 +420,12 @@ latest_posts:
     </article>
   </section>
 
-  <section class="home-section" aria-labelledby="talks-heading">
-    <h2 id="talks-heading">Talks &amp; Presentations</h2>
+  <section class="home-section" aria-labelledby="workshops-heading">
+    <h2 id="workshops-heading">Workshops</h2>
     <article>
       <h3 class="paper-title">From Planar Pushing to Rope Shaping: Generalizable Robotic Manipulation on CloudGripper</h3>
-      <p class="paper-venue">Speaker · RGMCW 2026 workshop at IEEE/RSJ IROS 2026 · Pittsburgh, PA · October 1, 2026</p>
-      <p class="paper-summary">Cloud Robotics session · Representing Team MIL-Cloud, the 2nd-place team in the ICRA 2026 RGMC Cloud Robotics track.</p>
+      <p class="paper-venue">Workshop Talk · RGMCW 2026 at IEEE/RSJ IROS 2026 · Pittsburgh, PA · October 1, 2026</p>
+      <p class="paper-summary">Winning Team representative · Cloud Robotics session · Team MIL-Cloud.</p>
       <p class="resource-links"><a href="https://sites.google.com/view/rgmcw2026/home-page">[Workshop Program]</a></p>
     </article>
   </section>
@@ -437,7 +437,7 @@ latest_posts:
         <img class="competition-certificate" src="{{ '/assets/img/icra-2026-rgmc-cloud-robotics-certificate.jpg' | relative_url }}" alt="ICRA 2026 Robotic Grasping and Manipulation Competition Cloud Robotics Track second-place certificate" loading="lazy" width="1400" height="990">
       </a>
       <div class="competition-copy">
-        <h3>2nd Place — IEEE ICRA 2026 Cloud Robotics Competition</h3>
+        <h3>Award-winning Team — IEEE ICRA 2026 Cloud Robotics Competition</h3>
         <p class="competition-kicker">11th Robotic Grasping and Manipulation Competition · Team MIL-Cloud</p>
         <p>Developed robust manipulation solutions for planar pushing and linear deformable-object shape control using the remote CloudGripper platform.</p>
         <p class="resource-links"><a href="https://cloudgripper.org/icra2026/index.html">[Official Award Page]</a><a href="{{ '/assets/pdf/icra-2026-rgmc-cloud-robotics-runner-up-certificate.pdf' | relative_url }}">[Certificate PDF]</a></p>
