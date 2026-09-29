@@ -11,6 +11,15 @@ cv:
       username: MichaelMa-177
 
   sections:
+    Presentations:
+      - name: "From Planar Pushing to Rope Shaping: Generalizable Robotic Manipulation on CloudGripper"
+        url: https://sites.google.com/view/rgmcw2026/home-page
+        summary: >
+          Speaker in the Cloud Robotics session of the RGMCW 2026 workshop at
+          IEEE/RSJ IROS 2026, Pittsburgh, PA, October 1, 2026. Representing
+          Team MIL-Cloud, the 2nd-place team in the ICRA 2026 RGMC Cloud
+          Robotics track.
+
     Projects:
       - name: Click-to-Model
         url: https://github.com/MichaelMa-177/Click-to-Model

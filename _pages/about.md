@@ -420,6 +420,16 @@ latest_posts:
     </article>
   </section>
 
+  <section class="home-section" aria-labelledby="talks-heading">
+    <h2 id="talks-heading">Talks &amp; Presentations</h2>
+    <article>
+      <h3 class="paper-title">From Planar Pushing to Rope Shaping: Generalizable Robotic Manipulation on CloudGripper</h3>
+      <p class="paper-venue">Speaker · RGMCW 2026 workshop at IEEE/RSJ IROS 2026 · Pittsburgh, PA · October 1, 2026</p>
+      <p class="paper-summary">Cloud Robotics session · Representing Team MIL-Cloud, the 2nd-place team in the ICRA 2026 RGMC Cloud Robotics track.</p>
+      <p class="resource-links"><a href="https://sites.google.com/view/rgmcw2026/home-page">[Workshop Program]</a></p>
+    </article>
+  </section>
+
   <section class="home-section" aria-labelledby="honors-heading">
     <h2 id="honors-heading">Honors and Awards</h2>
     <article class="competition-entry">
