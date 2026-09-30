@@ -176,6 +176,11 @@ latest_posts:
     padding: 1rem 0;
   }
 
+  .grant-entry {
+    padding: 1rem 0 1.25rem;
+    border-bottom: 1px solid var(--home-rule);
+  }
+
   .competition-certificate {
     width: 100%;
     height: auto;
@@ -432,6 +437,13 @@ latest_posts:
 
   <section class="home-section" aria-labelledby="honors-heading">
     <h2 id="honors-heading">Honors and Awards</h2>
+    <article class="grant-entry">
+      <div class="competition-copy">
+        <h3>IROS 2026 IEEE RAS Travel Support</h3>
+        <p class="competition-kicker">IEEE Robotics and Automation Society · US$1,500</p>
+        <p>Awarded travel support to attend IROS 2026 in Pittsburgh, Pennsylvania.</p>
+      </div>
+    </article>
     <article class="competition-entry">
       <a class="competition-certificate-link" href="{{ '/assets/pdf/icra-2026-rgmc-cloud-robotics-runner-up-certificate.pdf' | relative_url }}" target="_blank" rel="noopener">
         <img class="competition-certificate" src="{{ '/assets/img/icra-2026-rgmc-cloud-robotics-certificate.jpg' | relative_url }}" alt="ICRA 2026 Robotic Grasping and Manipulation Competition Cloud Robotics Track second-place certificate" loading="lazy" width="1400" height="990">
