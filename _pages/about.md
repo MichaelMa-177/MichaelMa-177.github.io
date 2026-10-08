@@ -403,7 +403,7 @@ latest_posts:
         <h3 class="paper-title">Click-to-Model: Real-Time Interactive Object Modeling and Robust 6D Pose Tracking</h3>
         <!-- Yu Ren's personal homepage has not been published or verified yet. Replace the placeholder target when available. -->
         <p class="paper-authors"><a class="author-self" href="{{ '/' | relative_url }}">Mingwei Ma</a>, <a class="author-placeholder" href="#" aria-disabled="true" title="Yu Ren homepage pending">Yu Ren</a>, <a href="https://www.nelsontian.cn/">Lunshuo Tian</a>, and <a href="https://www2.scut.edu.cn/automation/13575/list.htm">Yang Cong</a></p>
-        <p class="paper-venue">International Conference on Intelligent Robots and Systems (IROS), 2026</p>
+        <p class="paper-venue">International Conference on Intelligent Robots and Systems (IROS), 2026 (Oral)</p>
         <!-- Replace unavailable resource placeholders when the paper and project website are published. -->
         <p class="resource-links"><span class="resource-link-placeholder" role="link" aria-disabled="true">[Paper]</span><a href="https://github.com/MichaelMa-177/Click-to-Model">[Code]</a><span class="resource-link-placeholder" role="link" aria-disabled="true">[Website]</span><a href="#click-to-model-summary">[Summary]</a></p>
         <p class="paper-summary" id="click-to-model-summary">An end-to-end system that starts with a click in an RGB-D frame, reconstructs a metric object mesh, and hands it to a real-time 6D pose tracker.</p>
