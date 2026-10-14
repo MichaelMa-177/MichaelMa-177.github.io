@@ -53,7 +53,7 @@ latest_posts:
     width: 220px;
     height: 220px;
     object-fit: cover;
-    object-position: center 23%;
+    object-position: center top;
     border-radius: 20px;
   }
 
@@ -364,7 +364,7 @@ latest_posts:
 
 <div class="home-page">
   <section class="home-hero" aria-labelledby="home-name">
-    <img class="home-portrait" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Portrait of Mingwei Ma" width="220" height="220">
+    <img class="home-portrait" src="{{ '/assets/img/mingwei-ma-portrait-20261014.png' | relative_url }}" alt="Portrait of Mingwei Ma" width="220" height="220">
     <div class="home-identity">
       <h1 id="home-name">Mingwei Ma</h1>
       <p class="home-email">Email: mmm593860159@gmail.com</p>
