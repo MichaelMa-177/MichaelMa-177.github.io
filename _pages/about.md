@@ -386,8 +386,10 @@ latest_posts:
   <section class="home-section" aria-labelledby="news-heading">
     <h2 id="news-heading">News</h2>
     <ul class="news-list">
-      <li><span class="news-date">Sep 2026</span> Packaged <a href="https://github.com/MichaelMa-177/Click-to-Model">Click-to-Model</a> as a reproducible end-to-end RGB-D reconstruction and 6D tracking pipeline.</li>
-      <li><span class="news-date">Sep 2026</span> Added portable RealSense tracking and reproducible evaluation workflows to <a href="https://github.com/MichaelMa-177/SPARK-6D">SPARK-6D</a>.</li>
+      <li><span class="news-date">Sep 2025</span> I joined South China University of Technology for my master's. Looking forward to the next three years here! 🎓</li>
+      <li><span class="news-date">Jun 2026</span> Congrats to our MIL-Cloud team on finishing as runners-up in the CloudGripper Cloud Robotics track! 🥈</li>
+      <li><span class="news-date">Jun 2026</span> Our paper, "Click-to-Model: Real-Time Interactive Object Modeling and Robust 6D Pose Tracking", has been accepted to IROS 2026! See you in Pittsburgh! 🎉</li>
+      <li><span class="news-date">Oct 2026</span> I received the National Scholarship for Graduate Students at SCUT! 😊</li>
     </ul>
   </section>
 
