@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Click-to-Model | IROS 2026</title>
+    <meta name="description" content="Click-to-Model: interactive metric object modeling and real-time 6D pose tracking from RGB-D observations. IROS 2026 (Oral).">
+    <meta name="author" content="Mingwei Ma, Yu Ren, Lunshuo Tian, Yang Cong">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://michaelma-177.github.io/click-to-model/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Click-to-Model: Real-Time Interactive Object Modeling and Robust 6D Pose Tracking">
+    <meta property="og:description" content="From a user click to a metric 3D model and a tracked 6D pose. IROS 2026 (Oral).">
+    <meta property="og:url" content="https://michaelma-177.github.io/click-to-model/">
+    <meta property="og:image" content="https://michaelma-177.github.io/assets/click-to-model/images/pipeline.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="citation_title" content="Click-to-Model: Real-Time Interactive Object Modeling and Robust 6D Pose Tracking">
+    <meta name="citation_author" content="Ma, Mingwei">
+    <meta name="citation_author" content="Ren, Yu">
+    <meta name="citation_author" content="Tian, Lunshuo">
+    <meta name="citation_author" content="Cong, Yang">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_conference_title" content="2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)">
+    <meta name="citation_pdf_url" content="https://michaelma-177.github.io/assets/click-to-model/click-to-model-paper.pdf">
+    <link rel="icon" href="../assets/click-to-model/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" integrity="sha384-XKsuVXeTt8DAr1hJlawfDT6FwMaO+BVVw8qGhFvL/dpcOv6Q8j9fze3H+QxI9Xkp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/click-to-model/css/template.css">
+    <link rel="stylesheet" href="../assets/click-to-model/css/project.css">
+    <script src="../assets/click-to-model/project.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="project-nav" aria-label="Project navigation">
+      <a class="home-link" href="../">← Mingwei Ma</a>
+      <div><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#results">Results</a></div>
+    </nav>
+    <main id="main">
+      <section class="hero publication-header" aria-labelledby="paper-title">
+        <div class="hero-body">
+          <div class="container is-max-desktop has-text-centered">
+            <p class="venue-line">IROS 2026 <span class="oral">(Oral)</span></p>
+            <h1 id="paper-title" class="title is-1 publication-title"><span class="project-name">Click-to-Model:</span><span class="full-title">Real-Time Interactive Object Modeling<br class="desktop-break"> and Robust 6D Pose Tracking</span></h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a href="../">Mingwei Ma</a><sup>1</sup></span>
+              <span class="author-block">Yu Ren<sup>1</sup></span>
+              <span class="author-block"><a href="https://www.nelsontian.cn/">Lunshuo Tian</a><sup>2</sup></span>
+              <span class="author-block"><a href="https://www2.scut.edu.cn/automation/13575/list.htm">Yang Cong</a><sup>1,*</sup></span>
+            </div>
+            <div class="affiliations">
+              <p><sup>1</sup> School of Automation Science and Engineering, South China University of Technology</p>
+              <p><sup>2</sup> School of Computer Science and Engineering, University of New South Wales</p>
+              <p class="correspondence">* Corresponding author</p>
+            </div>
+            <div class="publication-links">
+              <a class="button is-dark is-rounded" href="../assets/click-to-model/click-to-model-paper.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h5"/></svg><span>Paper</span></a>
+              <a class="button is-dark is-rounded" href="https://github.com/MichaelMa-177/Click-to-Model"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5-6 7 6 7m8-14 6 7-6 7M14 3l-4 18"/></svg><span>Code</span></a>
+              <a class="button is-dark is-rounded" href="#video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg><span>Video</span></a>
+              <a class="button is-dark is-rounded" href="../assets/click-to-model/click-to-model-poster.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16v18H4zM8 7h8M8 11h8M8 15h3M8 18h8"/></svg><span>Poster</span></a>
+              <a class="button is-dark is-rounded" href="#citation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5H6a2 2 0 0 0-2 2v3l-2 2 2 2v3a2 2 0 0 0 2 2h2m8-14h2a2 2 0 0 1 2 2v3l2 2-2 2v3a2 2 0 0 1-2 2h-2"/></svg><span>BibTeX</span></a>
+            </div>
+            <p class="conference-link"><a href="https://events.infovaya.com/presentation?id=191885">Conference presentation ↗</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero teaser" id="video" aria-labelledby="demo-heading">
+        <div class="container is-max-desktop">
+          <h2 id="demo-heading" class="visually-hidden">Video demonstration</h2>
+          <figure>
+            <video id="demo-video" controls autoplay muted loop playsinline preload="metadata" poster="../assets/img/click-to-model-demo-poster.jpg" aria-label="Click-to-Model visual demonstration of object modeling and pose tracking">
+              <source src="../assets/video/click-to-model-demo.mp4" type="video/mp4">
+              <p><a href="../assets/video/click-to-model-demo.mp4">Download the demonstration video.</a></p>
+            </video>
+            <figcaption class="teaser-caption"><strong>One click to model an unseen object and track its 6D pose.</strong><br>CLM combines interactive reconstruction, metric scale recovery, and adaptive tracking from RGB-D observations.</figcaption>
+          </figure>
+          <p class="download-link"><a href="../assets/video/click-to-model-demo.mp4" download="Click-to-Model-demo.mp4">Download video ↓</a></p>
+        </div>
+      </section>
+
+      <section class="section hero is-light" id="abstract" aria-labelledby="abstract-heading">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered" id="abstract-heading">Abstract</h2>
+          <div class="content abstract-copy">
+            <p>Accurate perception of target objects is fundamental to robotic manipulation, yet current perception methods rely on known object models and perform poorly in tracking unseen objects. Simultaneously, computational costs during real-time robotic arm grasping hinder the pursuit of real-time performance. To address this challenge, we propose CLM, an interactive tracking framework based on learn-match. For object modeling, it introduces a shape-color-driven particle size matching method that effectively captures surface feature points. Combined with depth maps, this approach reconstructs models while ensuring consistency with the original object’s dimensions. Furthermore, we incorporate a learning-matching-based tracking mechanism that balances accuracy with real-time performance. Experiments conducted on YCB-V, and our self-built dataset demonstrate that our method not only matches the ADD(-S) metric of current SOTA approaches, but more importantly, achieves stable tracking of unseen objects and resolves re-localization issues when targets exit the field of view. Ablation studies further confirm that the scale-matching strategy based on joint shape-color particles is crucial for scale recovery.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="method" aria-labelledby="method-heading">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered" id="method-heading">From a click to a tracked pose</h2>
+          <p class="section-intro">An interactive perception pipeline for objects without pre-scanned CAD models.</p>
+          <figure class="pipeline-figure">
+            <a href="../assets/click-to-model/images/pipeline.png" aria-label="Open the full-resolution method diagram"><img src="../assets/click-to-model/images/pipeline.png" width="3400" height="1794" loading="lazy" alt="CLM pipeline: a click prompts SAM segmentation and SAM3D reconstruction; color–shape-guided particles align the model to metric depth; adaptive FoundationPose and ICP estimate the object pose."></a>
+            <figcaption>Segmentation and reconstruction → metric model restoration → adaptive pose estimation.</figcaption>
+          </figure>
+          <div class="method-steps">
+            <article><span class="step-number">01</span><h3>Interactive modeling</h3><p>A click specifies the object in an RGB-D frame. SAM extracts its mask, and SAM3D produces an initial model at a normalized scale.</p></article>
+            <article><span class="step-number">02</span><h3>Metric scale recovery</h3><p>Joint color and shape cues select distinctive surface particles. Weighted alignment to observed depth restores the object’s physical scale.</p></article>
+            <article><span class="step-number">03</span><h3>Adaptive 6D tracking</h3><p>Motion, geometric consistency, and confidence guide the choice between FoundationPose localization and fast ICP refinement. A new click enables reinitialization after target loss.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-light" id="examples" aria-labelledby="examples-heading">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered" id="examples-heading">Modeling and tracking examples</h2>
+          <p class="section-intro">Follow each object from its RGB observation to a metric model and tracked pose.</p>
+          <div class="object-tabs" role="tablist" aria-label="Choose an object" hidden>
+            <button type="button" id="tab-cup" role="tab" aria-selected="true" aria-controls="example-cup">Cup</button>
+            <button type="button" id="tab-drill" role="tab" aria-selected="false" aria-controls="example-drill" tabindex="-1">Drill</button>
+            <button type="button" id="tab-butter" role="tab" aria-selected="false" aria-controls="example-butter" tabindex="-1">Butter</button>
+            <button type="button" id="tab-tuna" role="tab" aria-selected="false" aria-controls="example-tuna" tabindex="-1">Tuna</button>
+          </div>
+          <div class="object-example" id="example-cup" role="tabpanel" aria-labelledby="tab-cup" tabindex="0">
+            <h3 class="example-heading">Cup</h3>
+            <div class="example-grid">
+              <figure><img src="../assets/click-to-model/images/cup-input.jpeg" width="627" height="474" loading="lazy" alt="Cup in the input RGB frame"><figcaption>RGB input</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/cup-mask.jpeg" width="783" height="593" loading="lazy" alt="Segmentation mask of the cup"><figcaption>Object mask</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/cup-model.jpeg" width="557" height="711" loading="lazy" alt="Reconstructed metric 3D cup model"><figcaption>Metric model</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/cup-tracking.jpeg" width="1280" height="961" loading="lazy" alt="Cup pose tracking with a 3D bounding box"><figcaption>6D pose tracking</figcaption></figure>
+            </div>
+          </div>
+          <div class="object-example" id="example-drill" role="tabpanel" aria-labelledby="tab-drill" tabindex="0">
+            <h3 class="example-heading">Drill</h3>
+            <div class="example-grid">
+              <figure><img src="../assets/click-to-model/images/drill-input.jpeg" width="637" height="359" loading="lazy" alt="Drill in the input RGB frame"><figcaption>RGB input</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/drill-mask.jpeg" width="783" height="444" loading="lazy" alt="Segmentation mask of the drill"><figcaption>Object mask</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/drill-model.jpeg" width="1144" height="902" loading="lazy" alt="Reconstructed metric 3D drill model"><figcaption>Metric model</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/drill-tracking.jpeg" width="1388" height="781" loading="lazy" alt="Drill pose tracking with a 3D bounding box"><figcaption>6D pose tracking</figcaption></figure>
+            </div>
+          </div>
+          <div class="object-example" id="example-butter" role="tabpanel" aria-labelledby="tab-butter" tabindex="0">
+            <h3 class="example-heading">Butter</h3>
+            <div class="example-grid">
+              <figure><img src="../assets/click-to-model/images/butter-input.jpeg" width="640" height="480" loading="lazy" alt="Butter carton in the input RGB frame"><figcaption>RGB input</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/butter-mask.jpeg" width="1240" height="930" loading="lazy" alt="Segmentation mask of the butter carton"><figcaption>Object mask</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/butter-model.jpeg" width="1094" height="1066" loading="lazy" alt="Reconstructed metric 3D butter carton model"><figcaption>Metric model</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/butter-tracking.jpeg" width="640" height="480" loading="lazy" alt="Butter carton pose tracking with a 3D bounding box"><figcaption>6D pose tracking</figcaption></figure>
+            </div>
+          </div>
+          <div class="object-example" id="example-tuna" role="tabpanel" aria-labelledby="tab-tuna" tabindex="0">
+            <h3 class="example-heading">Tuna</h3>
+            <div class="example-grid">
+              <figure><img src="../assets/click-to-model/images/tuna-input.png" width="640" height="480" loading="lazy" alt="Tuna can in the input RGB frame"><figcaption>RGB input</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/tuna-mask.png" width="640" height="480" loading="lazy" alt="Segmentation mask of the tuna can"><figcaption>Object mask</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/tuna-model.png" width="891" height="791" loading="lazy" alt="Reconstructed metric 3D tuna can model"><figcaption>Metric model</figcaption></figure>
+              <figure><img src="../assets/click-to-model/images/tuna-tracking.png" width="640" height="480" loading="lazy" alt="Tuna can pose tracking with a 3D bounding box"><figcaption>6D pose tracking</figcaption></figure>
+            </div>
+          </div>
+          <p class="figure-note">Selected examples from the paper and IROS presentation. Figure 3 of the paper includes results from the self-collected, HOPE, YCB-V, and NVIDIA datasets.</p>
+        </div>
+      </section>
+
+      <section class="section" id="results" aria-labelledby="results-heading">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered" id="results-heading">Experimental results</h2>
+          <p class="section-intro">Competitive pose accuracy with click-guided recovery and real-time online tracking.</p>
+          <div class="results-table-wrap" role="region" aria-label="Main comparison results" tabindex="0">
+            <table class="results-table">
+              <caption>Comparison with representative pipelines · Paper, Table II</caption>
+              <thead><tr><th scope="col">Method</th><th scope="col">ADD(-S) ↑</th><th scope="col">RSR (%) ↑</th><th scope="col">FPS ↑</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">FoundationPose</th><td>0.95</td><td>0</td><td>16</td></tr>
+                <tr><th scope="row">Any6D</th><td><strong>0.96</strong></td><td>0</td><td>13</td></tr>
+                <tr><th scope="row">ZeroPose</th><td>0.83</td><td>0</td><td>15</td></tr>
+                <tr><th scope="row">Category-level 6D Pose</th><td>0.76</td><td>0</td><td><abbr title="Not reported">—</abbr></td></tr>
+                <tr class="ours"><th scope="row">CLM (Ours)</th><td>0.95</td><td><strong>96</strong> <span class="table-detail">(click-guided)</span></td><td><strong>19</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="result-notes">
+            <p><strong>Evaluation.</strong> ADD(-S) reports recall at the 0.1 object-diameter threshold. Relocalization success rate (RSR) is measured under the paper’s recovery protocol; CLM uses a new user click after target loss.</p>
+            <p><strong>Runtime.</strong> NVIDIA RTX 4090 + Intel i9, 640 × 480 RGB-D input. FPS is averaged over 300 online tracking frames after warm-up and excludes the one-time modeling and scale-recovery stages. A dash indicates an unreported result.</p>
+          </div>
+          <div class="ablation-section">
+            <div class="ablation-copy"><h3 class="title is-4">Why combine color and shape?</h3><p>Distinctive appearance and geometric structure provide complementary anchors for scale alignment. In the ablation study, the full module achieves 0.96 ADD(-S) recall, compared with 0.85 using shape alone and 0.72 using color alone.</p></div>
+            <div class="results-table-wrap" role="region" aria-label="Scale recovery ablation results" tabindex="0">
+              <table class="results-table ablation-table">
+                <caption>Scale-recovery ablation · Paper, Table III</caption>
+                <thead><tr><th scope="col">Particle cues</th><th scope="col">ADD(-S) ↑</th><th scope="col">RSR ↑</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Neither cue</th><td>0.64</td><td>0.46</td></tr>
+                  <tr><th scope="row">Color only</th><td>0.72</td><td>0.61</td></tr>
+                  <tr><th scope="row">Shape only</th><td>0.85</td><td>0.68</td></tr>
+                  <tr class="ours"><th scope="row">Color + shape</th><td><strong>0.96</strong></td><td><strong>0.97</strong></td></tr>
+                </tbody>
+              </table>
+              <p class="figure-note">RSR values are reproduced in the fractional form reported in Table III.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-light" id="poster" aria-labelledby="poster-heading">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered" id="poster-heading">Conference poster</h2>
+          <figure class="poster-figure"><a href="../assets/click-to-model/click-to-model-poster.pdf" aria-label="Open the Click-to-Model conference poster PDF"><img src="../assets/click-to-model/images/poster.png" width="1600" height="1143" loading="lazy" alt="IROS 2026 Click-to-Model poster with the method, qualitative examples, and experimental tables"></a></figure>
+          <p class="download-link"><a href="../assets/click-to-model/click-to-model-poster.pdf" download>Download poster (PDF) ↓</a></p>
+        </div>
+      </section>
+
+      <section class="section" id="citation" aria-labelledby="citation-heading">
+        <div class="container is-max-desktop">
+          <div class="citation-heading"><h2 class="title is-3" id="citation-heading">BibTeX</h2><button type="button" id="copy-bibtex" class="copy-button" hidden>Copy citation</button></div>
+          <pre class="citation-code"><code id="bibtex">@inproceedings{ma2026clicktomodel,
+  title     = {Click-to-Model: Real-Time Interactive Object Modeling
+               and Robust 6D Pose Tracking},
+  author    = {Ma, Mingwei and Ren, Yu and Tian, Lunshuo and Cong, Yang},
+  booktitle = {2026 IEEE/RSJ International Conference on Intelligent
+               Robots and Systems (IROS)},
+  year      = {2026},
+  url       = {https://michaelma-177.github.io/click-to-model/}
+}</code></pre>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container is-max-desktop has-text-centered">
+        <p><a href="../">Mingwei Ma</a> · Click-to-Model · IROS 2026</p>
+        <p class="template-credit">Website adapted from the <a href="https://eliahuhorwitz.github.io/Academic-project-page-template/">Academic Project Page Template</a>, which builds on <a href="https://nerfies.github.io/">Nerfies</a>.<br>Template design licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
