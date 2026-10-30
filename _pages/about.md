@@ -439,6 +439,12 @@ latest_posts:
     <h2 id="honors-heading">Honors and Awards</h2>
     <article class="grant-entry">
       <div class="competition-copy">
+        <h3>National Scholarship for Graduate Students</h3>
+        <p class="competition-kicker">South China University of Technology · 2025–2026 Academic Year</p>
+      </div>
+    </article>
+    <article class="grant-entry">
+      <div class="competition-copy">
         <h3>IROS 2026 IEEE RAS Travel Support</h3>
         <p class="competition-kicker">IEEE Robotics and Automation Society · US$1,500</p>
         <p>Awarded travel support to attend IROS 2026 in Pittsburgh, Pennsylvania.</p>
